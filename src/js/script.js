@@ -36,6 +36,9 @@ function btnDesencriptar () {
     textArea.value = textoDesencriptado;
     mensaje.value = "";
     mensaje.style.backgroundImage = "";
+    if(textoDesencriptado == "") {
+        alert("¡No hay texto encriptado para desencriptar!");
+    }
 }
 
 function desencriptar (menDencriptado) {
@@ -56,7 +59,11 @@ function btnCopiar() {
     
     navigator.clipboard.writeText(texto)
     .then(function() {
-        alert('Texto copiado al portapapeles: ' + texto);
+        if (texto == "") {
+            alert("¡No hay texto para copiar!");
+        }else{
+            alert('Texto copiado al portapapeles: ' + texto);
+        }
     })
     .catch(function(error) {
         console.error('Error al copiar el texto: ', error);
