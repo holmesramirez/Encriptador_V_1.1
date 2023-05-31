@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/src/asset/img/logotipo_definitivo_sin_fodo.png"
+            alt="Logo de empresa Holmes BPM registrado ante la SIC">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letra minuscula y sin acentos</h6>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()" type="button" id="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()" type="button" id="btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="10" placeholder="Texto encriptado"></textarea>
+            <div>
+                <button id="btn-copiar" onclick="btnCopiar()" type="button" title="¡Solo sirve para copiar el texto encriptado!">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>

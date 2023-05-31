@@ -1,0 +1,186 @@
+* {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+
+.logo {
+    padding-top: 45px;
+    margin-left: 50px;
+    width: 5%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    overflow: hidden;
+}
+
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 0px;
+    text-transform: lowercase;
+    margin-left: 120px;
+}
+
+::placeholder {
+    color: #0A3871;
+    line-height: 50px;
+    display: inline;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url(/src/asset/img/muneco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 95px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    width: 400px;
+    height: 850px;
+    left: 1000px;
+    top: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.mensaje::placeholder {
+    text-align: center;
+    line-height: 150px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+    background-image: url(/src/asset/img/bi_exclamation-circle-fill.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 20px;
+    padding-left: 43px;
+    display: inline;
+}
+
+.botones {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+#btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+#btn-desencriptar:active {
+    background: black;
+}
+
+#btn-desencriptar:hover {
+    object-fit: cover;
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+
+#btn-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+#btn-encriptar:active {
+    background: white;
+}
+
+#btn-encriptar:hover {
+    object-fit: cover;
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+
+#btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 324px;
+    margin-top: 570px;
+    position: absolute;
+    width: 336px;
+    font-weight: bold;
+}
+
+#btn-copiar:active {
+    background: white;
+}
+
+#btn-copiar:hover {
+    object-fit: cover;
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+
+/*BOTÓN MAGICO*/
+
+#btn-copiar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    /*Empieza en posición 00*/
+    0% {
+        background-position: 0 0;
+    }
+    /*en mitad de animación*/
+    50% {
+        background-position: 400% 0;
+    }
+    /*Cuando termina la animación vuelce al punto inicial*/
+    100% {
+        background-position: 0 0;
+    }
+}
+
