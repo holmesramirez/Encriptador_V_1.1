@@ -42,7 +42,7 @@ main {
 
 .mensaje {
     background: white;
-    background-image: url(/src/asset/img/muneco.png);
+    background-image: url(../../../src/asset/img/muneco.png);
     background-position: center;
     background-repeat: no-repeat;
     border: none;
@@ -72,7 +72,7 @@ main {
 .informacion {
     color: #495057;
     font-size: 18px;
-    background-image: url(/src/asset/img/bi_exclamation-circle-fill.png);
+    background-image: url(../../../src/asset/img/bi_exclamation-circle-fill.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position: 20px;
